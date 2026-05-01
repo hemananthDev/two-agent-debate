@@ -28,10 +28,9 @@ two-agent-debate/
 │   ├── server.js      # Express static file server
 │   └── package.json
 ├── run.py             # Starts both backend and frontend
+├── .env               # Environment variables (API keys)
 └── README.md
 ```
-
-> The `.env` file lives one level up in the parent directory (`POC's/`) and is referenced automatically.
 
 ---
 
@@ -47,7 +46,7 @@ two-agent-debate/
 
 ### 1. Environment Variable
 
-Create a `.env` file in the **parent directory** (`POC's/`):
+Create a `.env` file in the **project root** (`two-agent-debate/`):
 
 ```
 GROQ_API_KEY=your_api_key_here
