@@ -116,7 +116,7 @@ All available models are fetched live from Groq on page load. To change defaults
 
 ## Output
 
-Debate transcripts are saved as Markdown files in the `POC's/` directory:
+Debate transcripts are saved as Markdown files in the `two-agent-debate/` directory (project root):
 
 ```
 debate-<topic-slug>.md
