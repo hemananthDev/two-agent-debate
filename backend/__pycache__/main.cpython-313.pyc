@@ -1,0 +1,188 @@
+ó
+    mêiN  ã                   ó  • S SK r S SKrS SKrS SKrS SKJr  S SKJ r   S SKJ	r	J
+r
+  S SK
+Jr  S SK
+Jr  S S KJrJr  S r\" 5       r\ " \ R(                  R+                  \S	5      5        \	" 5       r\R/                  \S
+/S
+S/S
+S/S9  \" \ R0                  " S5      S\R2                  " SS9S9r " S S\5      r\R9                  S5      S 5       rS rS rS r S r!S r"S r#S r$S \4S! jr%\RM                  S"5      S \4S# j5       r'g)$é    N)ÚOpenAI)Ú
+load_dotenv)Ú FastAPIÚ
+HTTPException)ÚCORSMiddleware)ÚStreamingResponse)Ú	BaseModelÚFieldc                  óô  • [         R                  R                  [         R                  R                   [        5      5      n [
+        S5       Hj  n[         R                  R
+                  U S5      n[         R                  R                  U5      (       a  U s  $ [         R                  R                  U 5      n Ml  
+   [         R                  R                  [         R                  R                   [        5      5      $ )Né   ú.env)ÚosÚpathÚ dirnameÚ abspathÚ__file__ÚrangeÚjoinÚexists)Ú currentÚ_Ú	candidates      ÚBc:\Users\UHEMANANTH\Desktop\POC's\two-agent-debate\backend\main.pyÚfind_envr   
+   s   € Üg‰go‰oœbŸg™gŸo™o¬hÓ7Ó8€GÜ
+1ŽXˆÜ—G‘G—L‘L ¨&Ó1ˆ	Ü
+
+7‰7>‰>˜)×
+$Ñ
+$ØŠNÜ—'‘'—/‘/ 'Ó*Š ñ	 ô
+ 7‰7?‰?œ2Ÿ7™7Ÿ?™?¬8Ó4Ó
+5Ð5ó    r
+   zhttp://localhost:3000ÚPOSTÚGETzContent-TypeÚAccept)Ú
+allow_originsÚ
+allow_methodsÚ
+allow_headersÚGROQ_API_KEYzhttps://api.groq.com/openai/v1F)Úverify)Ú api_keyÚbase_urlÚ
+http_clientc                   óÄ   • \ rS rSr% \" SSS9r\\ S'   \" SS S9r\	\ S	'   \" SS
+S9r
+\	\ S
+'   \\ S'   \\ S
+'   \\ S'   \" SS
+S9r
+\\ S'   \" SS
+S9r\\ S'   \" SS
+S9r
+\\ S'   Srg)Ú
+DebateRequesté(   é   i,  )Ú
+min_lengthÚ
+max_lengthÚtopicé   é   )ÚgeÚleÚturnsé2   Ú	max_linesÚagent1_modelÚagent2_modelÚ
+judge_modelÚ
+agent1_nameÚ
+agent2_nameÚ
+judge_name© N)Ú__name__Ú
+__module__Ú__qualname__Ú__firstlineno__r
+   r-   ÚstrÚ__annotations__r2   Úintr4   r8   r9   r:   Ú__static_attributes__r;   r   r   r(   r(   (   sz   ‡ Ù !°Ñ4€Eˆ3Ó4Ù˜! Ñ#€Eˆ3Ó#Ù˜a BÑ'€IˆsÓ'ØÓØÓØÓÙ¨°bÑ9€KÓ9Ù¨°bÑ9€KÓ9Ù q°RÑ8€JÖ8r   r(   z /modelsc                  óê   •  [         R                  R                  5       n SU R                   Vs/ s H  oR                  PM  
+   sn0$ s  snf ! [
+          a  n[
+        SS[        U5       3S9eS nAff = f)NÚmodelsiö  z"Failed to fetch models from Groq: )Ú
+status_codeÚdetail)ÚclientrE   ÚlistÚdataÚidÚ	Exceptionr   r@   )rE   ÚmÚes      r   Ú
+get_modelsrO   4   sl   € ðcÜ—‘×#Ñ#Ó%ˆØ¨¯ªÓ5ª AŸ4œ4©Ñ5Ð6Ð6ùÒ5øÜ
+ó cÜ¨Ð6XÔY\Ð]^ÓY_ÐX`Ð4aÑbÐbûðcús(   ‚-A
+ ¯AÁA
+ ÁA
+ Á
+A2ÁA-Á-A2c           
+      ó   • UR                  5       n0 US   ESUS   S   SU SU SX2-
+   S3 -   0EUS'   [        R                  R                  R	                  XS 9nUR
+                  S   R                  R                  n[        R                  " SS	U[        R                  S
+9R                  5       nUR                  5        V s/ s H  owR                  5       (       d  M  U PM  
+   nn S
+R                  US U 5      $ s  sn f )Nr   Ú contentz This is turn ú of z
+. You have z turn(s) remaining after this.©ÚmodelÚmessagesz<think>.*?</think>Ú )ÚflagsÚ
+)ÚcopyrH   ÚchatÚ
+completionsÚcreateÚ choicesÚ messagerQ   ÚreÚsubÚDOTALLÚstripÚ
+splitlinesr   )	rT   rU   Úturnr2   r4   ÚresponseÚreplyÚlineÚliness	            r   rZ   rZ   =   s	  € Ø}‰}‹€Hð aX˜a‘[ð  a )¨X°a©[¸Ñ-CÈÐW[ÐV\Ð\`ÐafÐ`gÐgrÐsxÑsð  sAð  A_ð  G`ñ  .`ñ  a€HˆQKÜ{‰{×&Ñ&×-Ñ-°EÐ-ÐM€HØ×Ñ˜QÑ×'Ñ'×/Ñ/€EÜFŠFÐ(¨"¨e¼2¿9¹9ÑE×KÑKÓM€EØ#×.Ñ.Ô0ÓAÒ0d·J±J·LTÑ0€EÐAØ
+9‰9U˜:˜IÐ&Ó
+'Ð'ùò 
+Bs   ÃC;ÃC;c                 ó8   • SU SU  SU SU SU SU S U SU S	3$ )
+NúYou are z, a debater arguing z the following topic: "z". Your opponent's name is z. You have exactly z8 turns in total. Each of your responses must not exceed u1    lines. Speak naturally and directly â€” address zz by name, use first-person language, and avoid robotic or formal phrases. Be concise, persuasive, and respond directly to z]'s last point. Strategize knowing how many turns you have left. Do not re-introduce yourself.r;   )Úsider-   Ú	your_nameÚ
+opponent_namer2   r4   s         r   Úbuild_system_promptrn   G   s‘   € Ø
+i[Ð 4°T°FÐ:RÐSXÐRYÐYuð  wDð  vEð  EXð  Y^ð  X_ð  _Wð  Xað  Wbð  bSð  Tað  Sbð  b\ð  ]jð  \kð  kHð  Ið  Ir   c                 ó   • SU  S3$ )Nrj   z–, a strict and impartial debate judge. Your rulings are based solely on the logical strength, evidence, and persuasiveness of the arguments presented.r;   )r:   s    r   Úbuild_judge_system_promptrp   K   s   € Ø
+j\ð  "xð  yð  yr   c           
+      ój  • S[        U R                  5      S.SSU R                   SU R                   SU R                   S U R
+                   SU R                   S	3
+S./n[        R                  R                  R                  U R                  US
+9nUR                  S
+   R                  R                  $ )NÚsystem©ÚrolerQ   ÚuserzOpen the debate. Topic: "z
+". Debaters: z
+ (FOR) vs z (AGAINST). Rules: z turns each, max z  lines per response. Introduce the topic and the debaters, state the rules clearly, and declare the debate open. Speak naturally as a judge addressing the room.rS   r   )rp   r:   r-   r8   r9   r2   r4   rH   rZ   r[   r\   r7   r]   r^   rQ   )ÚreqrU   re   s      r   Ú
+judge_openrw   O   sí   € àÔ&?ÀÇÁÓ&OÑPØÐ&@ÀÇÁÀ
+È>ÐZ]×ZiÑZiÐYjÐjtÐux÷  vEñ  vEð  uFð  FYð  Z]÷  Zcñ  Zcð  Ydð  duð  vy÷  vCñ  vCð  uDð  Ddð  %eñ  	fð€Hô {‰{×&Ñ&×-Ñ-°C·O±OÈhÐ-ÐW€HØ
+×
+Ñ
+˜AÑ
+×
+&Ñ
+&×
+.Ñ
+.Ð.r   c                 óî   • S[        U R                  5      S.SSU S3S./n[        R                  R                  R
+                  U R                  US9nUR                  S    R                  R                  $ )Nrr   rs   ru   z8The debate has concluded. Here is the full transcript:
+
+uø   
+
+Based solely on the arguments made, deliver your verdict. Declare the winning side as either FOR or AGAINST â€” not by the debater's name. Explain why that side argued more effectively, referencing specific points made. Be impartial and decisive.rS   r   )
+rp   r:   rH   rZ   r[   r\   r7   r]   r^   rQ   )rv   Ú
+transcriptrU   re   s       r   Ú
+judge_verdictrz   X   s|   € àÔ&?ÀÇÁÓ&OÑPØÐ&`ÐakÐ`lð  mgð  %hñ  	ið€Hô {‰{×&Ñ&×-Ñ-°C·O±OÈhÐ-ÐW€HØ
+×
+Ñ
+˜AÑ
+×
+&Ñ
+&×
+.Ñ
+.Ð.r   c                 ór   • [         R                  " SSU R                  5       5      R                   S5      S S $ )Nz
+[^a-z0-9]+Ú-r3   )r_   r`   Úlowerrb   )Útexts    r   Ú slugifyr   a   s-   € Ü
+
+6Š6-  d§j¡j£lÓ
+3×
+9Ñ
+9¸#Ó
+>¸sÀÐ
+CÐCr   c                 ó  • S[        U 5       S3n[        R                  R                   [        U5      n[
+        USSS9 nUR
+                  SU  S 35        UR
+                  U5        S S S 5        U$ ! , (       d  f       U$ = f)Nz debate-z.mdÚwzutf-8)Úencodingz
+# Debate: ú
+
+) r   r   r   r   ÚBASE_DIRÚopenÚwrite)r-   ry   Úfilenamer   Úfs        r   Ú
+save_debater‰   e   st   € Øœ ›Ð(¨Ð,€HÜ
+
+7‰7<‰<œ (Ó
++€DÜ	
+ˆdC 'Ò	*¨aØ	 ‰ *˜U˜G 4Ð(Ô)Ø	 ‰ 
+Ô÷ 
++ð €O÷  
++Ô	*ð €Oús
+   ¿'A0Á0
+A? rv   c           
+   #   óœ  #   • SnS n [        U 5      nUSU R                   SU S3-
+  nU" SU R                  U5      v •  S [        SU R                  U R                  U R
+                  U R                  U R                  5      S	./nS [        S
+U R                  U R
+                  U R                  U R                  U R                  5      S	./n[        S
+U R                  S
+-   5       GH)  nU" SS[        U5      5      v •  [        U R                  XFU R                  U R                  5      n UR                  S
+U S	.5        UR                  SU S	.5        USU SU R                   SU R                   SU  S3	-
+  nU" SU R                  U 5      v •  [        U R                  XVU R                  U R                  5      nUR                  S
+US	.5        UR                  SUS	.5        USU R
+                   SU S3-
+  nU" SU R
+                  U5      v •  GM,  
+   [        X5      n	USU R                   SU	 S3-
+  nU" SU R                  U	5      v •   [        U R                  U5      n
+U" SSU
+5      v •  g ! [           a"  n
+U" SSS[        U
+5       35      v •   S n
+A
+g S n
+A
+ff = f! [           a"  n
+U" SSS[        U
+5       35      v •   S n
+A
+g S n
+A
+ff = f7f)NrV   c                  ó<   • S[         R                  " XUS.5       S3$ )Nzdata: )ÚtypeÚ speakerrQ   rƒ   )ÚjsonÚdumps)Úkindr   rQ   s      r   ÚeventÚstream_debate.<locals>.eventq   s"   € ØœŸ
+š
+¨DÐQXÑ#YÓZÐ[Ð[_Ð`Ð`r   z## Judge's Opening
+
+**z:**
+rƒ   Ú openingrr   ÚFORrs   Ú AGAINSTr.   Ú
+turn_startÚ	assistantru   z## Turn rR   z
+
+**z
+ (FOR):**
+Úagent1z**z (AGAINST):**
+Úagent2z## Judge's Verdict
+
+**rX   Ú verdictÚsavedÚerrorz*Debate completed but failed to save file: zDebate error: )rw   r:   rn   r-   r8   r9   r2   r4   r   r@   rZ   r5   Úappendr6   rz   r‰   rL   )rv   ry   r‘   r“   Úagent1_messagesÚagent2_messagesrd   Úreply1Úreply2rš   r‡   rN   s               r   Ú
+stream_debater¢   n   s  é € Ø€Jòað"<Ü˜S“/ˆ ØÐ0°·±Ð0@ÀÀgÀYÈdÐSÑSˆ
+ÙI˜sŸ~™~¨wÓ7Ò7à$,Ô9LÈUÐTW×T]ÑT]Ð_b×_nÑ_nÐps×pÑpð  BE÷  BKñ  BKð  MP÷  MZñ  MZó  :[ñ  \ð  ]ˆØ$,Ô9LÈYÐX[×XaÑXaÐcf×crÑcrÐtw÷  uDñ  uDð  FI÷  FOñ  FOð  QT÷  Q^ñ  Q^ó  :_ñ  `ð  aˆä˜!˜SŸY™Y¨™]×+ˆDÙ˜ b¬#¨d«)Ó4Ò4ä˜#×*Ñ*¨OÀ3Ç9Á9ÈcÏmÉmÓ\ˆFØ×"Ñ"¨KÀFÑ#KÔLØ×"Ñ"¨F¸vÑ#FÔGØ˜H T F¨$¨s¯y©y¨k¸ÀÇÁÐ?PÐP[Ð\bÐ[cÐcgÐhÑhˆJÙ˜ #§/¡/°6Ó:Ò:ä˜#×*Ñ*¨OÀ3Ç9Á9ÈcÏmÉmÓ\ˆFØ×"Ñ"¨KÀFÑ#KÔLØ×"Ñ"¨F¸vÑ#FÔGØ˜B˜sŸ™Ð/¨¸v¸hÀdÐKÑKˆJÙ˜ #§/¡/°6Ó:Õ:ñ ,ô   Ó0ˆ ØÐ0°·±Ð0@ÀÀgÀYÈbÐQÑQˆ
+ÙI˜sŸ~™~¨wÓ7Ò7ð	\Ü" 3§9¡9¨jÓ9ˆHÙ˜   XÓ.Ó.øÜó 	\Ù˜  Ð'QÔRUÐVWÓRXÐQYÐ%ZÓ[×[ûð	\ûô ó <ÙG˜R >´#°a³&°Ð!:Ó;×;ûð<üsY   ‚K‰IJ É
+"I. É-KÉ.
+JÉ8JÊJ ÊKÊJÊJ Ê
+K	Ê'KÊ?KËK	Ë	Kz /debatec                 ó(   • [        [        U 5      SS9$ )Nztext/event-stream)Ú
+media_type)r   r¢   )rv   s    r   Údebater¥   ™   s   € ä
+œ]¨3Ó/Ð<OÑ
+PÐPr   )(r   r_   rŽ   ÚhttpxÚopenair   Údotenvr   Ú fastapir   r   Úfastapi.middleware.corsr    Úfastapi.responsesr   Úpydanticr	   r
+   r   r„   r   r   ÚappÚadd_middlewareÚgetenvÚClientrH   r(   ÚgetrO   rZ   rn   rp   rw   rz   r   r‰   r¢   Úpostr¥   r;   r   r   Ú<module>r³      s&  ðÛ 	Û 	Û 
+Û Ý Ý ß *Ý 2Ý /ß %ò 6ñ ‹:€Ù 
+ˆBG‰GL‰L˜ 6Ó*Ô +á
+ƒi€Ø × Ñ ØØ*Ð+Ø˜5/Ø! 8Ð,ð	 ñ ñ 
+ØIŠInÓ%Ø
+-Ø—’ EÑ*ñ 
+€ô	9Iô 	9ð ‡ˆÓñcó ðcò (òIòyò/ò/òDòð(<}ô (<ðV ‡ˆ)ÓðQ
+ó Qó ñQr   
