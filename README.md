@@ -11,7 +11,7 @@ An AI-powered debate system where two LLMs argue opposing sides of a topic, mode
 3. **Agent 2** argues AGAINST the topic
 4. Agents alternate for the configured number of turns, each aware of their remaining turns
 5. The **Judge** delivers a final verdict declaring the winning side (FOR or AGAINST) based solely on argument quality
-6. The full debate is saved as a `.md` file in the project root
+6. The full debate is saved as a `.md` file (format: `debate-{topic}.md`) in the `two-agent-debate/` directory
 
 ---
 
@@ -96,7 +96,7 @@ Press `Ctrl+C` to stop both servers cleanly.
 4. Set the max lines per response (hard-enforced)
 5. Select a model and name for Agent 1 (FOR), Agent 2 (AGAINST), and the Judge from the live Groq model list
 6. Click **Start Debate** — turns stream in one by one as they complete
-7. The judge's verdict and a saved `.md` file path are shown at the end
+7. After the verdict, the debate file is saved as `debate-{slugified-topic}.md` in the project root directory
 
 ---
 
