@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import sys
 import httpx
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -22,6 +23,12 @@ def find_env():
 BASE_DIR = find_env()
 load_dotenv(os.path.join(BASE_DIR, ".env"))
 
+api_key = os.getenv("GROQ_API_KEY")
+if not api_key:
+    print("[error] GROQ_API_KEY not found in environment variables!")
+    print(f"[debug] Looked in: {os.path.join(BASE_DIR, '.env')}")
+    sys.exit(1)
+
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -31,7 +38,7 @@ app.add_middleware(
 )
 
 client = OpenAI(
-    api_key=os.getenv("GROQ_API_KEY"),
+    api_key=api_key,
     base_url="https://api.groq.com/openai/v1",
     http_client=httpx.Client(verify=False)
 )
@@ -55,6 +62,9 @@ def get_models():
         models = client.models.list()
         return {"models": [m.id for m in models.data]}
     except Exception as e:
+        print(f"[error] Failed to fetch models from Groq: {type(e).__name__}: {str(e)}")
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=502, detail=f"Failed to fetch models from Groq: {str(e)}")
 
 

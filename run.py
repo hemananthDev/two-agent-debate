@@ -8,6 +8,16 @@ import socket
 base = os.path.dirname(os.path.abspath(__file__))
 processes = []
 
+# Detect virtual environment Python
+def get_python_executable():
+    venv_python = os.path.join(base, ".venv", "Scripts", "python.exe")
+    if os.path.exists(venv_python):
+        return venv_python
+    venv_python_unix = os.path.join(base, ".venv", "bin", "python")
+    if os.path.exists(venv_python_unix):
+        return venv_python_unix
+    return sys.executable
+
 def is_port_in_use(port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         return s.connect_ex(("localhost", port)) == 0
@@ -33,8 +43,9 @@ if is_port_in_use(3000):
     print("[error] Port 3000 is already in use. Please free it and try again.")
     sys.exit(1)
 
+python_exe = get_python_executable()
 backend = subprocess.Popen(
-    [sys.executable, "-m", "uvicorn", "main:app", "--reload"],
+    [python_exe, "-m", "uvicorn", "main:app", "--reload"],
     cwd=os.path.join(base, "backend"),
     stdout=subprocess.PIPE,
     stderr=subprocess.STDOUT,
