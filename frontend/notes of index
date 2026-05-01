@@ -1,1 +1,83 @@
-hi
+"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="AI-powered two-agent debate system using Groq LLMs" />
+  <title>Two-Agent Debate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Two-Agent Debate</h1>
+
+    <form id="debate-form">
+      <div class="form-group">
+        <label for="topic">Debate Topic</label>
+        <input type="text" id="topic" placeholder="Enter debate topic" required />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="turns">Number of Turns</label>
+          <input type="number" id="turns" value="5" min="1" max="20" required />
+        </div>
+        <div class="form-group">
+          <label for="max_lines">Max Lines per Response</label>
+          <input type="number" id="max_lines" value="6" min="1" max="50" required />
+        </div>
+      </div>
+
+      <div class="agents-grid">
+        <div class="agent-card for">
+          <h3>Agent 1 — FOR</h3>
+          <div class="form-group">
+            <label for="agent1_model">Model</label>
+            <select id="agent1_model" required></select>
+          </div>
+          <div class="form-group">
+            <label for="agent1_name">Name</label>
+            <input type="text" id="agent1_name" value="Llama" required />
+          </div>
+        </div>
+
+        <div class="agent-card judge">
+          <h3>Judge</h3>
+          <div class="form-group">
+            <label for="judge_model">Model</label>
+            <select id="judge_model" required></select>
+          </div>
+          <div class="form-group">
+            <label for="judge_name">Name</label>
+            <input type="text" id="judge_name" value="Scout" required />
+          </div>
+        </div>
+
+        <div class="agent-card against">
+          <h3>Agent 2 — AGAINST</h3>
+          <div class="form-group">
+            <label for="agent2_model">Model</label>
+            <select id="agent2_model" required></select>
+          </div>
+          <div class="form-group">
+            <label for="agent2_name">Name</label>
+            <input type="text" id="agent2_name" value="Qwen" required />
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" id="start-btn">Start Debate</button>
+    </form>
+
+    <div id="debate-output" class="hidden">
+      <h2>Debate</h2>
+      <div id="messages"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+"""
